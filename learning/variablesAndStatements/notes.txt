@@ -1,0 +1,3 @@
+varibale is basically just human readable name that refers to something in memory.
+memory is basically just big array of bytes. It can be indexed and we call such an index address or location or pointer.
+
