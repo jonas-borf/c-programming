@@ -7,5 +7,7 @@ int main(void)
     float lenght;
     int mass;
 
-    fp = fopen("whales.txt)
+    fp = fopen("whales.txt", "r");
+
+    while(fscanf(fp, "%s $f $d", s, &))
 }
