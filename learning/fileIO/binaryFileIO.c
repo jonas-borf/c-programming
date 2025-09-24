@@ -7,5 +7,7 @@ int main(void)
 
     fp = fopen("output.bin", "wb");
 
-    fwrite(byts, sizeof(char))
+    fwrite(bytes, sizeof(char), 6, fp);
+
+    fclose(fp);
 }
