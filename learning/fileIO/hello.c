@@ -6,8 +6,7 @@ int main(void)
 
     fp = fopen("hello.txt", "r");
 
-    int c = fgetc(fp);
-    printf("%c\n", c);
-    
+    while((c = fgetc(fp)) != )
+
     fclose(fp);
 }
