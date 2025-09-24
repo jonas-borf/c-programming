@@ -6,7 +6,7 @@ int main(void)
     int x = 32;
 
     fp = fopen("output.txt", "w");
-
+    //fp = stdout;
     fputc('B', fp);
     fputc('\n', fp);
     fprintf(fp, "x = %d\n", x);
