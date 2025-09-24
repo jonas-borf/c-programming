@@ -8,5 +8,8 @@ int main(void)
 
     fp = fopen("quote.txt", "r");
 
-    while
+    while((fgets(s, sizeof(s), fp)) != NULL)
+    {
+        
+    }
 }
