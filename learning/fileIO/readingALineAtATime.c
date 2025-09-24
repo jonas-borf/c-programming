@@ -10,6 +10,6 @@ int main(void)
 
     while((fgets(s, sizeof(s), fp)) != NULL)
     {
-        printf("%d: %s", )
+        printf("%d: %s", ++linecount, s);
     }
 }
