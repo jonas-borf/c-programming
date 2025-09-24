@@ -12,4 +12,6 @@ int main(void)
     {
         printf("%d: %s", ++linecount, s);
     }
+
+    fclose(fp);
 }
