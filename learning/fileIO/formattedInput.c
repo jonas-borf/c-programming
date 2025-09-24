@@ -9,5 +9,8 @@ int main(void)
 
     fp = fopen("whales.txt", "r");
 
-    while(fscanf(fp, "%s $f $d", s, &length, &mass))
+    while(fscanf(fp, "%s $f $d", s, &length, &mass) != EOF)
+    {
+        printf(")
+    }
 }
