@@ -9,5 +9,6 @@ int main(void)
 
     fputc('B', fp);
     fputc('\n', fp);
-    
+    fprinf(fp, "x = %d\n", fp);
+    fpits
 }
