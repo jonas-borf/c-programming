@@ -9,7 +9,7 @@ int main(void)
 
     fputc('B', fp);
     fputc('\n', fp);
-    fprinf(fp, "x = %d\n", fp);
+    fprintf(fp, "x = %d\n", x);
     fputs("Hello Mom!", fp);
 
     fclose(fp);
