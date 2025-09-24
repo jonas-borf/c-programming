@@ -7,5 +7,7 @@ int main(void)
 
     fp = fopen("output.txt", "w");
 
-    fputc('B', )
+    fputc('B', fp);
+    fputc('\n', fp);
+    
 }
