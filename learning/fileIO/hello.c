@@ -8,6 +8,6 @@ int main(void)
 
     int c = fgetc(fp);
     printf("%c\n", c);
-
+// this is a test
     fclose(fp);
 }
