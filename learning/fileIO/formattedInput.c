@@ -11,6 +11,8 @@ int main(void)
 
     while(fscanf(fp, "%s $f $d", s, &length, &mass) != EOF)
     {
-        printf("%s whale, %d tonnes, %.1f meters\n", s, )
+        printf("%s whale, %d tonnes, %.1f meters\n", s, length, mass);
     }
+
+    fclose(fp);
 }
