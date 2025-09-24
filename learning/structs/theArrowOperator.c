@@ -8,7 +8,7 @@ struct car {
 
 void set_price(struct car *c, float new_price)
 {
-    (*c).price = new_price; // apparently this is ugly
+    c->price = new_price; // this is the less ugly way
 }
 
 int main(void)
