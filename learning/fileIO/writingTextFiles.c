@@ -2,5 +2,7 @@
 
 int main(void)
 {
-
+    FILE *fp;
+    int x = 32;
+    
 }
