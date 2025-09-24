@@ -3,5 +3,9 @@
 int main(void)
 {
     FILE *fp;
-    char s
+    char s[1024];
+    float lenght;
+    int mass;
+
+    fp = fopen("whales.txt)
 }
