@@ -2,5 +2,7 @@
 
 int main(void)
 {
-    FILE
+    FILE *fp;
+    char s[1024];
+    int line
 }
