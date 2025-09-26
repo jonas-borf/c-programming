@@ -3,10 +3,10 @@
 
 int main(void)
 {
-  char s[] = "Goats!";
-  char t[100];
+  int a[] = {11, 22, 33};
+  int b[3];
 
-  memcpy(t, s, 7);
+  memcpy(b, a, 3 * sizeof(int));
 
-  printf("%s\n", t);
+  printf("%d\n", b[1]);
 }
