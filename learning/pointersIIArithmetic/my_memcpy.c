@@ -13,8 +13,8 @@ void *my_memcpy(void *dest, void *src, int byte_count)
 
 int main(void)
 {
-  char *s = "test";
-  char *t;
+  char s[] = "test";
+  char t[100];
 
   my_memcpy(t, s, 5);
 
