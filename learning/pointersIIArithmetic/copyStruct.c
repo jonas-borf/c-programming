@@ -3,16 +3,16 @@
 int main(void)
 {
   struct antelope {
-    char s[];
+    int copy_this;
   };
 
   struct antelope my_antelope;
   struct antelope my_clone_antelope;
 
-  my_antelope.s = "I am an antelope";
+  my_antelope.copy_this = 67;
 
 
   memcpy(&my_clone_antelope, &my_antelope, sizeof(my_antelope));
 
-  printf("%s\n", my_clone_antelope.s);
+  printf("%d\n", my_clone_antelope.copy_this);
 }
