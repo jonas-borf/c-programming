@@ -1,0 +1,2 @@
+the author basically just says that creating your own types can be useful sometimes. For any 
+project that I use c for, it is probably unnesccary.
