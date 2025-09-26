@@ -2,5 +2,7 @@
 
 int main(void)
 {
-
+  struct antelope {
+    char s[];
+  }
 }
