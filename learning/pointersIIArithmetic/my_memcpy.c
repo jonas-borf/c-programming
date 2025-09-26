@@ -4,9 +4,8 @@ void *my_memcpy(void *dest, void *src, int byte_count)
 {
   char *s = src, *d = dest;
 
-  while (byte_count--)
-  {
-    *d++ = *s++
+  while (byte_count--) {
+    *d++ = *s++;
   }
 
   return dest;
