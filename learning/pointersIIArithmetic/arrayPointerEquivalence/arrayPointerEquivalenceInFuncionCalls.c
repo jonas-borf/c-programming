@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// definition of int my_strlen(char s[]) would
+// have worked too
+
 int my_strlen(char *s)
 {
   int count = 0;
@@ -19,5 +22,6 @@ int main(void)
   char *t = "Wombats!";
 
   printf("%d\n", my_strlen(t));
+  printf("%d\n", my_strlen(s));
 
 }
