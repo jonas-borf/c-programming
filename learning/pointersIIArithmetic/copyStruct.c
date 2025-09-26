@@ -9,7 +9,10 @@ int main(void)
   struct antelope my_antelope;
   struct antelope my_clone_antelope;
 
-  my_antelope.
+  my_antelope.s = "I am an antelope";
 
-  memcpy
+
+  memcpy(my_clone_antelope, my_antelope, sizeof(my_antelope));
+
+  printf("%s\n", my_clone_antelope.s);
 }
