@@ -28,8 +28,10 @@ int main(void)
     factorials[i] = factorial(i + 1);
   
   for(int k = 3; k < 10; k++) {
-    for (int x = 2; x < exp(64 * log(2)/k); x++) {
-      for (int y = x; y < 64 * log(2)/k; y++) {
+    double upper_bound = exp(64 * log(2)/k);
+
+    for (int x = 2; x < upper_bound; x++) {
+      for (int y = x; y < upper_bound; y++) {
         unsigned long long powx = power(x, k);
         unsigned long long powy = power(y, k);
         unsigned long long sum = powx + powy;
