@@ -32,6 +32,7 @@ int main(void)
     printf("%d\n", k);
 
     for (int x = 2; x < upper_bound; x++) {
+      printf("%d\n", x);
       for (int y = x; y < upper_bound; y++) {
         unsigned long long powx = pow(x, k);
         unsigned long long powy = pow(y, k);
