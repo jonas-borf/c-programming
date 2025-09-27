@@ -13,7 +13,7 @@ int main(void)
   }
 
   while(true) {
-    printf("bot number %d created, frying circuits\n". botNum);
+    printf("bot number %d created, frying circuits\n", botNum);
     botNum++;
   }
 }
