@@ -28,7 +28,7 @@ int main(void)
     factorials[i] = factorial(i + 1);
   
   for(int k = 3; k < 10; k++) {
-    for (int x = 2; x < 64 * log(2)/k; x++) {
+    for (int x = 2; x < exp(64 * log(2)/k); x++) {
       for (int y = x; y < 64 * log(2)/k; y++) {
         unsigned long long powx = power(x, k);
         unsigned long long powy = power(y, k);
