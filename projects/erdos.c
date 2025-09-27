@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 unsigned long long pow(int base, int exponent)
 {
@@ -27,11 +28,12 @@ int main(void)
     factorials[i] = factorial(i + 1);
   
   for(int k = 3; k < 10; k++) {
-    for (int x = 1; x < 1000; x++) {
-      for (int y = 2; y < 1000; y++) {
-        
-        unsigned long long sum = pow(x, k) + pow(y, k);
-        unsigned long long diff = pow(y, k) - pow(x, k);
+    for (int x = 2; x < 64 * log(2)/k; x++) {
+      for (int y = x; y < 64 * log(2)/k; y++) {
+        unsigned long long powx = pow(x, k);
+        unsigned long long powy = pow(y, k);
+        unsigned long long sum = powx + powy;
+        unsigned long long diff = powy - powx;
         for (int i = 1; i < N; i++) {
           if (sum == factorials[i])
             printf("sum (n, x, y, k) = (%d, %d, %d, %d)\n", i + 1, x, y, k);
