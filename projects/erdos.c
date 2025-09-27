@@ -28,7 +28,7 @@ int main(void)
   
   for(int k = 3; k < 10; k++) {
     for (int x = 1; x < 1000; x++) {
-      for (int y = x; y < 1000; y++) {
+      for (int y = 2; y < 1000; y++) {
         
         unsigned long long sum = pow(x, k) + pow(y, k);
         unsigned long long diff = pow(y, k) - pow(x, k);
