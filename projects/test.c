@@ -3,5 +3,6 @@
 
 int main(void)
 {
-  printf("%f\n", exp(log(2) * 10));
+  int k = 5;
+  printf("%f\n", exp(64 * log(2) / k));
 }
