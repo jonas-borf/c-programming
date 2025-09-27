@@ -28,10 +28,11 @@ int main(void)
     factorials[i] = factorial(i + 1);
   
   for(int k = 3; k < 10; k++) {
-    //int upper_bound = exp(64*log(2)/k)/2;
-    int upper_bound = 1000;
+    int upper_bound = exp(64*log(2)/k)/2;
+    //int upper_bound = 1000;
 
     for (int x = 2; x < upper_bound; x++) {
+      printf("%d\n", x);
       for (int y = x; y < upper_bound; y++) {
         unsigned long long powx = pow(x, k);
         unsigned long long powy = pow(y, k);
