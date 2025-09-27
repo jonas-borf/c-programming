@@ -3,9 +3,8 @@
 
 int main(void)
 {
-  double k = 5;
-  double z = 64 * log(2) / k;
+  double k = 5.0;
+  double z = 64.0 * log(2.0) / 5.0;
   double power = exp(z);
-  printf("%f\n", power);
 
 }
