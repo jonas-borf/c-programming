@@ -5,5 +5,5 @@ int main(void)
 {
   double var = 10;
 
-  printf("%f\n", pow(exp(1), var));
+  printf("%f\n", pow(exp(1), 10));
 }
