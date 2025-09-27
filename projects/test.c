@@ -8,7 +8,5 @@ double givePower(double exponent)
 
 int main(void)
 {
-  double var = 10;
-
-  printf("%f\n", givePower(10));
+  printf("%d\n", pow(999, 9));
 }
