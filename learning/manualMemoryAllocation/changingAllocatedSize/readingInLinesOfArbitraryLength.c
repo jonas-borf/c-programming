@@ -24,7 +24,7 @@ char *readline(FILE *fp)
     return NULL;
 
   while (c = fgetc(fp), c != '\n' && c != EOF) {
-    
+    printf("%p\n", &fp); 
     if (offset == bufsize - 1) {
       bufsize *= 2;
     
