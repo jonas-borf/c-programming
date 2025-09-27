@@ -28,10 +28,8 @@ int main(void)
     factorials[i] = factorial(i + 1);
   
   for(int k = 3; k < 10; k++) {
-    double new_k = k;
-    double z = 64.0 * log(2);
-    printf("%f\n", z);
-    double upper_bound = exp(z);
+    double e = exp(1);
+    double upper_bound = power();
 
     for (int x = 2; x < upper_bound; x++) {
       for (int y = x; y < upper_bound; y++) {
