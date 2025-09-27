@@ -6,7 +6,7 @@ unsigned long long power(int base, int exponent)
   if (exponent == 1)
     return base;
 
-  return base * pow(base, exponent - 1);
+  return base * power(base, exponent - 1);
 }
 
 unsigned long long factorial(int n)
