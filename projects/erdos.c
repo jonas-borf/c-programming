@@ -29,7 +29,7 @@ int main(void)
   
   for(int k = 3; k < 10; k++) {
     int upper_bound = exp(64*log(2)/k)/2;
-    printf("%d\n", upper_bound);
+    printf("%d\n", k);
 
     for (int x = 2; x < upper_bound; x++) {
       for (int y = x; y < upper_bound; y++) {
