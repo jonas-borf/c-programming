@@ -28,8 +28,8 @@ int main(void)
     factorials[i] = factorial(i + 1);
   
   for(int k = 3; k < 10; k++) {
-    double upper_bound = exp(64*log(2)/k)/2;
-    printf("%f\n", upper_bound);
+    int upper_bound = exp(64*log(2)/k)/2;
+    printf("%d\n", upper_bound);
 
     for (int x = 2; x < upper_bound; x++) {
       for (int y = x; y < upper_bound; y++) {
