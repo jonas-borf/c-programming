@@ -29,7 +29,9 @@ int main(void)
   
   for(int k = 3; k < 10; k++) {
     double new_k = k;
-    double upper_bound = exp((64.0 * log(2)) / new_k);
+    double x = 64.0 * log(2) / new_k;
+    printf("%f\n", x);
+    //double upper_bound = exp((64.0 * log(2)) / new_k);
 
     for (int x = 2; x < upper_bound; x++) {
       for (int y = x; y < upper_bound; y++) {
