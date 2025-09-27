@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-unsigned long long pow(int base, int exponent)
+unsigned long long power(int base, int exponent)
 {
   if (exponent == 1)
     return base;
@@ -30,8 +30,8 @@ int main(void)
   for(int k = 3; k < 10; k++) {
     for (int x = 2; x < 64 * log(2)/k; x++) {
       for (int y = x; y < 64 * log(2)/k; y++) {
-        unsigned long long powx = pow(x, k);
-        unsigned long long powy = pow(y, k);
+        unsigned long long powx = power(x, k);
+        unsigned long long powy = power(y, k);
         unsigned long long sum = powx + powy;
         unsigned long long diff = powy - powx;
         for (int i = 1; i < N; i++) {
