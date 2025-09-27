@@ -13,7 +13,9 @@ int main(void)
   }
 
   while(true) {
-    printf("bot number %d created, frying circuits\n", botNum);
+
+    if (botNum % 10000 == 0)
+      printf("bot number %d created, frying circuits\n", botNum);
     botNum++;
   }
 }
