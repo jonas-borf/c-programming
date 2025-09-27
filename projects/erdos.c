@@ -28,8 +28,7 @@ int main(void)
     factorials[i] = factorial(i + 1);
   
   for(int k = 3; k < 10; k++) {
-    double e = exp(1);
-    double upper_bound = power();
+    double upper_bound = exp(64*log(2)/k);
 
     for (int x = 2; x < upper_bound; x++) {
       for (int y = x; y < upper_bound; y++) {
