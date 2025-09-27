@@ -33,6 +33,7 @@ int main(void)
 
     for (int x = 2; x < upper_bound; x++) {
       for (int y = x; y < upper_bound; y++) {
+        printf("(x, y) = (%d, %d)\n", x, y);
         unsigned long long powx = power(x, k);
         unsigned long long powy = power(y, k);
         unsigned long long sum = powx + powy;
