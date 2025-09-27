@@ -3,5 +3,5 @@
 
 int main(void)
 {
-  printf("%f\n", exp(1));
+  printf("%f\n", exp(log(2) * 10));
 }
