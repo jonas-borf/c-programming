@@ -4,5 +4,7 @@
 int main(void)
 {
   double k = 5;
-  printf("%f\n", sizeof(64 * log(2) / 5));
+  double z = 64 * log(2) / k;
+  printf("%f\n", sizeof(z));
+
 }
