@@ -3,6 +3,6 @@
 
 int main(void)
 {
-  float k = 5;
-  printf("%f\n", exp(64 * log(2) / k));
+  double k = 5;
+  printf("%f\n", sizeof(64 * log(2) / 5));
 }
