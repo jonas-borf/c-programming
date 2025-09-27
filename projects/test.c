@@ -5,6 +5,6 @@ int main(void)
 {
   double k = 5;
   double z = 64 * log(2) / k;
-  printf("%f\n", sizeof(z));
+  printf("%f\n", exp(z));
 
 }
