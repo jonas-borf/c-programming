@@ -20,7 +20,7 @@ unsigned long long factorial(int n)
 
 int main(void)
 {
-  int N = 64;
+  int N = 50;
 
   unsigned long long factorials[N];
   
