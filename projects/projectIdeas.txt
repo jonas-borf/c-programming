@@ -1,2 +1,1 @@
 1. typing test in terminal
-2. making a 128 bit integer type with lists and arithmetic functions
