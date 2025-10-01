@@ -41,14 +41,19 @@ int is_k_couple(int k, int x, int y)
 
 int list_coupled_pairs(int k, int  x, int y)
 {
-  
+  if (is_k_couple(k, x, y)) {
+    printf("(x, y) = (%d, %d)\n", x , y);
+    list_coupled_pairs(k, x + y, abs(x - y));
+  }  
+
+  return 0;
 }
 
 int main(void)
 {
   int x = 1;
   int y = 7;
-  int k = 3;
+  int k = 4;
 
   list_coupled_pairs(k, x, y);
 }
